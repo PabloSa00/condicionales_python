@@ -28,3 +28,37 @@ numero_2 = int(input('Ingrese el segundo número:\n'))
 # Verifique si el numero_1 es menor a 10 o el numero_2
 # es mayor a -2
 # Imprima en pantalla si se cumple o no la condición
+
+sentence_a = f'{numero_1} es mayor que {numero_2}'
+sentence_b = f'{numero_2} es mayor que {numero_1}'
+
+if numero_1 > numero_2: 
+    print(sentence_a)
+else:
+    print(sentence_b)
+
+sentence_c = f'{numero_1} es positivo'
+sentence_d = f'{numero_1} es igual a cero'
+sentence_e = f'{numero_1} es negativo'
+
+if numero_1 > 0:
+    print(sentence_c)
+elif numero_1 == 0:
+    print(sentence_d)
+else:
+    print(sentence_e)
+
+sentence = 'Felicidades, tu numero cumple nuestra condicion (es mayor a cero y menor que cien)'
+sentence_2 = 'Ups, ha habido un problema, tu numero no cumple con nuestra condición :('
+
+if 0 < numero_1 < 100:
+    print(sentence)
+else:
+    print(sentence_2)
+
+sentence_3 = 'Si numero_1 es menor que 10 o numero_2 es mayor a -2, veras este mensaje'
+
+if numero_1 < 10 or numero_2 > -2:
+    print(sentence_3)
+else:
+    print('No se han cumplido ninguna de las condiciones')

@@ -32,3 +32,32 @@ texto_2 = '7'
 # Esta pregunta estará repetida en el Campus para que puedan
 # responder.
 # NOTA: La respuesta no se encuentra en el apunte, sino en Google ;)
+
+sentence = f'{texto_1} es mayor alfabeticamente que {texto_2}'
+sentence_2 = f'{texto_2} es mayor alfabeticamente que {texto_1}'
+
+if texto_1 > texto_2:
+    print(sentence)
+elif texto_2 > texto_1:
+    print(sentence_2)
+else:
+    print('Ambos textos son iguales alfabeticamente')
+
+numero_1 = int(texto_1)
+numero_2 = int(texto_2)
+
+sentence_3 = f'{numero_1} es mayor que {numero_2}'
+sentence_4 = f'{numero_2} es mayor que {numero_1}'
+
+if numero_1 > numero_2:
+    print(sentence_3)
+elif numero_2 > numero_1:
+    print(sentence_4)
+else:
+    print('Ambos numeros son iguales')
+
+'''Respuesta a la pregunta:
+Creo que esto se debe principalmente a dos hechos:
+Primero: Que analiticamente hablando, todas las letras tienen un valor numerico creciente, desde la A< hasta la >Z. 
+y
+Segundo:Que el ordenador es capaz de generar estas letras por codigo conformado por numeros (Ejemplo: Ä es 0196 y A es 65) '''
